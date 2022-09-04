@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculate Value of Coinage</title>
+</head>
+<body>
+<div id="container">
+<h3>Calculate Gold Value of Coinage</h3>
+<div id="coinfield">
+<label for="platinum">p:&nbsp;</label><input type="number" id="platinum" oninput="consolidate()" onchange="consolidate()" min="0" value="0" />
+<label for="cgold">g:&nbsp;</label><input type="number" id="cgold" oninput="consolidate()" onchange="consolidate()" min="0" value="0" />
+<label for="electrum">e:&nbsp;</label><input type="number" id="electrum" oninput="consolidate()" onchange="consolidate()" min="0" value="0" />
+<label for="silver">s:&nbsp;</label><input type="number" id="silver" oninput="consolidate()" onchange="consolidate()" min="0" value="0" />
+<label for="copper">c:&nbsp;</label><input type="number" id="copper" oninput="consolidate()" onchange="consolidate()" min="0" value="0" />
+</div>
+<br>
+<p><label for="result">Gold Value:&nbsp;</label><span id="result">0.00</span></p>
+<hr>
+<a href="index.html">&larr; Back to Coin Splitter</a>
+</div>
+</body>
+</html>

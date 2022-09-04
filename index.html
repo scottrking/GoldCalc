@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='utf-8'>
+    <title>Coin Splitter</title>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+<h3>Input Gold</h3>
+<form>
+    <input type="number" id="gold" oninput="recalc()" onchange="recalc()" min="0" value="10" />
+    <p><small>(Decimals okay.)</small></p>
+</form>
+
+<h3>Coin Values</h3>
+<table>
+    <tr>
+        <th></th>
+        <th>Platinum</th>
+        <th>Gold</th>
+        <th>Silver</th>
+        <th>Copper</th>
+        
+    </tr>
+    <tr>
+        <th>Simple</th>
+        <td>-</td>
+        <td id="gp">-</td>
+        <td id="sp">-</td>
+        <td id="cp">-</td>
+    </tr>
+    <tr>
+        <th>Basic</th>
+        <td id="pp">-</td>
+        <td id="gpm">-</td>
+        <td id="spm">-</td>
+        <td id="cpm">-</td>
+    </tr>
+</table>
+<hr>
+<a href="calc.html">to Coin Consolidator &rarr;</a>
+</div>
+</body>
+</html>
